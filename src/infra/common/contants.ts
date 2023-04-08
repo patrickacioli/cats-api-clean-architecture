@@ -1,0 +1,2 @@
+export const CAT_REPOSITORY = 'CAT_REPOSITORY';
+export const DATASTORE = 'DATASTORE';

@@ -1,0 +1,7 @@
+{
+  "exportall.config.folderListener": [
+    "/src/domain/entity",
+    "/src/domain/interfaces",
+    "/src/domain/types"
+  ]
+}
