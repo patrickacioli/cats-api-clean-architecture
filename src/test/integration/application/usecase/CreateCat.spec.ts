@@ -1,8 +1,8 @@
-import { CreateCat } from '@application/usecase';
 import { CACHE_MANAGER, CacheModule } from '@nestjs/cache-manager';
 import { INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { MongooseMemoryServer } from '@test-utils';
+import { CreateCat } from '../../../../application/usecase';
 import { RepositoriesModule, UsecasesModule } from '../../../../infra';
 
 describe('CreateCat', () => {

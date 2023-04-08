@@ -10,7 +10,6 @@ export class CatsRedisRepository extends CatRepository {
   private static KEY_PREFIX = 'catsdb';
   constructor(@Inject(CACHE_MANAGER) private cacheManager: any) {
     super();
-    console.log('cacheManager', cacheManager);
     this.client = cacheManager.store.getClient();
   }
 

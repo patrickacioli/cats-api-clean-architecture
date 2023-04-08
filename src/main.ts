@@ -47,7 +47,8 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
-  app.startAllMicroservices();
+  // Uncomment this line to start all microservices
+  // app.startAllMicroservices();
   app
     .listen(PORT, '0.0.0.0')
     .then(() => Logger.log(`API Listen on ${PORT}`))
