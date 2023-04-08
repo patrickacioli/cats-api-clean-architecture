@@ -1,5 +1,7 @@
 import { CreateCat, DeleteCat, FindCats, FindOneCat } from '@application';
 
+import { Cat } from '@domain/entity';
+import { UsecasesModule } from '@infra';
 import {
   Body,
   Controller,
@@ -10,9 +12,7 @@ import {
   Post,
 } from '@nestjs/common';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
-import { Cat } from '../../../domain/entity';
-import { CreateCatDTO } from '../../dto/cats/create-cat.dto';
-import { UsecasesModule } from '../../usecases/usecases.module';
+import { CreateCatDTO } from '../../dto';
 
 @Controller('cats')
 @ApiTags('cats')
